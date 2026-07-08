@@ -56,13 +56,13 @@ The rejection of H3 is the project's most important result: it empirically tests
 
 ### 1. The Core Relationship: Transparency → Trust
 
-![Transparency vs Trust regression with confidence bands](Visualization/fig1_regression_confidence_bands.png)
+![Transparency vs Trust regression with confidence bands](Visualization/Best figures/fig1_regression_confidence_bands.png)
 
 Simple Linear Regression (n = 1,000) with 95% confidence and prediction intervals; a LOWESS smoother confirms the linear trend. Transparency is a statistically significant but modest standalone predictor (R² = 0.071) — which motivated the multivariate models below.
 
 ### 2. What Actually Drives Trust: Feature Importance
 
-![Random Forest feature importance](Visualization/fig2_feature_importance.png)
+![Random Forest feature importance](Visualization/Best figures/fig2_feature_importance.png)
 
 AI behavioral signals (confidence + accuracy = **68.2%** combined importance) dominate structural explanation features. The engineered transparency composite ranks 4th.
 
@@ -81,13 +81,13 @@ AI behavioral signals (confidence + accuracy = **68.2%** combined importance) do
 
 ### 3. Not All Users Respond the Same: Trust Calibration by Skepticism Group
 
-![Trust calibration curve by skepticism group](Visualization/fig3_trust_calibration_curve.png)
+![Trust calibration curve by skepticism group](Visualization/Best figures/fig3_trust_calibration_curve.png)
 
 Transparency improvements primarily benefit the **Moderate Trust** segment — the largest (36.6%) and most malleable group — while users with extreme prior dispositions are largely immovable in either direction.
 
 ### 4. Four Models Compared: Performance Dashboard
 
-![Model performance dashboard](Visualization/fig4_model_dashboard.png)
+![Model performance dashboard](Visualization/Best figures/fig4_model_dashboard.png)
 
 Six-panel dashboard: R² / MAE / RMSE comparisons, per-fold cross-validation stability, classification metrics, and an actual-vs-predicted scatter for the best model.
 
@@ -104,7 +104,7 @@ Six-panel dashboard: R² / MAE / RMSE comparisons, per-fold cross-validation sta
 
 ### 5. The Attitude–Behavior Gap: Does Stated Trust Predict Action?
 
-![WoA vs AI Trust behavioral validation](Visualization/fig5_woa_aitrust.png)
+![WoA vs AI Trust behavioral validation](Visualization/Best figures/fig5_woa_aitrust.png)
 
 The regression of behavior (WoA) on stated trust is nearly flat: **WoA = −0.012 + 0.125 × AITrust** (r = 0.078, p = 0.083, Test R² = −0.015 — worse than predicting the mean). The WoA distribution is bimodal, concentrated at exactly 0 (ignored the AI) and exactly 1 (fully adopted the AI), with a mean of ~0.42.
 
