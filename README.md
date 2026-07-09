@@ -164,17 +164,6 @@ Applying WoA to an independent behavioral dataset is what allowed this project t
 
 ---
 
-## Skills Demonstrated
-
-- **Statistical inference** — OLS with coefficient tables, p-values, 95% confidence intervals; formal hypothesis testing (H1–H3); effect-size reporting; residual diagnostics
-- **Machine learning** — model selection across a complexity ladder, ensemble methods, feature importance analysis, classification with stratified splits and class imbalance awareness
-- **Rigorous validation** — 5-fold cross-validation, generalization-gap analysis, cross-dataset replication with an independent behavioral dataset
-- **Feature engineering** — composite score construction (psychometric-style), behavioral metric computation (WoA) with principled edge-case handling
-- **Data wrangling** — multi-format ingestion (CSV + SPSS binary), missing-value strategy selection, IQR outlier treatment with documented decisions
-- **Scientific communication** — publication-quality visualization, structured reporting, honest reporting of a null result (H3) instead of burying it
-
----
-
 ## Tech Stack
 
 | Tool | Purpose |
