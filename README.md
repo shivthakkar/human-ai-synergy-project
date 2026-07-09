@@ -52,17 +52,17 @@ The rejection of H3 is the project's most important result: it empirically tests
 
 ---
 
-## Results in Pictures
+## Results
 
 ### 1. The Core Relationship: Transparency → Trust
 
-![Transparency vs Trust regression with confidence bands](Visualization/Best figures/fig1_regression_confidence_bands.png)
+![Transparency vs Trust regression with confidence bands](images/fig1_regression_confidence_bands.png)
 
 Simple Linear Regression (n = 1,000) with 95% confidence and prediction intervals; a LOWESS smoother confirms the linear trend. Transparency is a statistically significant but modest standalone predictor (R² = 0.071) — which motivated the multivariate models below.
 
 ### 2. What Actually Drives Trust: Feature Importance
 
-![Random Forest feature importance](Visualization/Best figures/fig2_feature_importance.png)
+![Random Forest feature importance](images/fig2_feature_importance.png)
 
 AI behavioral signals (confidence + accuracy = **68.2%** combined importance) dominate structural explanation features. The engineered transparency composite ranks 4th.
 
@@ -81,13 +81,13 @@ AI behavioral signals (confidence + accuracy = **68.2%** combined importance) do
 
 ### 3. Not All Users Respond the Same: Trust Calibration by Skepticism Group
 
-![Trust calibration curve by skepticism group](Visualization/Best figures/fig3_trust_calibration_curve.png)
+![Trust calibration curve by skepticism group](images/fig3_trust_calibration_curve.png)
 
 Transparency improvements primarily benefit the **Moderate Trust** segment — the largest (36.6%) and most malleable group — while users with extreme prior dispositions are largely immovable in either direction.
 
 ### 4. Four Models Compared: Performance Dashboard
 
-![Model performance dashboard](Visualization/Best figures/fig4_model_dashboard.png)
+![Model performance dashboard](images/fig4_model_dashboard.png)
 
 Six-panel dashboard: R² / MAE / RMSE comparisons, per-fold cross-validation stability, classification metrics, and an actual-vs-predicted scatter for the best model.
 
@@ -104,9 +104,15 @@ Six-panel dashboard: R² / MAE / RMSE comparisons, per-fold cross-validation sta
 
 ### 5. The Attitude–Behavior Gap: Does Stated Trust Predict Action?
 
-![WoA vs AI Trust behavioral validation](Visualization/Best figures/fig5_woa_aitrust.png)
+![WoA vs AI Trust behavioral validation](images/fig5_woa_aitrust.png)
 
 The regression of behavior (WoA) on stated trust is nearly flat: **WoA = −0.012 + 0.125 × AITrust** (r = 0.078, p = 0.083, Test R² = −0.015 — worse than predicting the mean). The WoA distribution is bimodal, concentrated at exactly 0 (ignored the AI) and exactly 1 (fully adopted the AI), with a mean of ~0.42.
+
+### 6. Cross-Dataset Validation (Step 9)
+
+![Step 9 cross-dataset validation](images/fig6_step9_cross_dataset_validation.png)
+
+Left: the WoA ~ AITrust regression (n = 387). Center: residual plot with random scatter around zero, confirming the regression assumptions hold — the null result reflects a genuine absence of a trust→behavior relationship, not model misspecification. Right: side-by-side comparison of the primary and secondary dataset regressions.
 
 ---
 
@@ -198,13 +204,13 @@ human-ai-synergy-project/
 │   └── Study 2 Data Syntax and Outputs/
 │       └── AI and Decision Making_FINAL_dataset.sav   # Secondary SPSS dataset (526 rows)
 │
-└── Visualization/
+└── images/
     ├── fig1_regression_confidence_bands.png           # Core transparency–trust relationship
     ├── fig2_feature_importance.png                    # Random Forest feature importance
     ├── fig3_trust_calibration_curve.png               # Trust calibration by skepticism group
     ├── fig4_model_dashboard.png                       # All 4 models compared
     ├── fig5_woa_aitrust.png                           # WoA behavioral validation
-    └── ...additional diagnostic plots
+    └── fig6_step9_cross_dataset_validation.png        # Cross-dataset validation (Step 9)
 ```
 
 ---
